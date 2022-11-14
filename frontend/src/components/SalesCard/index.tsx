@@ -2,7 +2,6 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 
 import './styles.css'
-import icon  from '../../assets/img/notification-icon.svg'
 import NotificatioButton from '../NotificationButton'
 import { useState } from "react"
 
