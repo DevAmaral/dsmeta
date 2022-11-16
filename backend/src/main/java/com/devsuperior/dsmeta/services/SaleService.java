@@ -20,8 +20,9 @@ public class SaleService {
 
         LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
 
+        //Operaçao ternaria
         LocalDate min = minDate.equals("") ? today.minusDays(365) : LocalDate.parse(minDate);
-        LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate); //Operacao ternaria
+        LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate);
 
         return repository.findSales(min, max, pageable);
     }
