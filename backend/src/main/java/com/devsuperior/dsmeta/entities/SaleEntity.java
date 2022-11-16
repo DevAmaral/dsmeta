@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "tb_sales")
-public class Sale {
+public class SaleEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +17,7 @@ public class Sale {
     private LocalDate date;
 
 
-    public Sale() {
+    public SaleEntity() {
     }
 
     //Constructor
