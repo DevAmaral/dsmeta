@@ -19,9 +19,6 @@ public class SaleEntity {
 
     public SaleEntity() {
     }
-
-    //Constructor
-
     public Long getId() {
         return id;
     }
